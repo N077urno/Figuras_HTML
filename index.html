@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<title>Figuras</title>
+	<style>
+
+
+		p{ 												/* configuração do parágrafo CSS */
+			text-align: justify; 						/* é uma propriedade CSS que controla o 
+														alinhamento horizontal do conteúdo de um elemento. Ela é utilizada para definir a posição do texto dentro de um bloco, seja ele um parágrafo, um cabeçalho ou qualquer outro elemento HTML que contenha texto. A propriedade text-align aceita os seguintes valores: left: alinha o texto à esquerda. right: alinha o texto à direita. center: centraliza o texto. justify: distribui o texto de forma justificada, ou seja, com espaços adicionais entre as palavras para preencher o espaço disponível na linha. */
+			
+			text-indent: 50px;							/* é uma propriedade CSS que define o recuo da
+														primeira linha de um bloco de texto. Ela é utilizada para criar um espaçamento em branco na primeira linha de um parágrafo ou de um bloco de texto. O valor da propriedade text-indent pode ser definido em pixels, em porcentagem ou em unidades relativas, como em ou rem. Seu valor padrão é 0, o que significa que a primeira linha de um bloco de texto começa no início da linha. */
+			
+			color: white;								/* é uma propriedade CSS que define a cor do 
+														texto de um elemento HTML. Ela pode ser aplicada a qualquer elemento HTML que contenha texto, como parágrafos, títulos, links e listas. O valor da propriedade color pode ser especificado de diversas formas. Alguns exemplos são: Nomes de cores pré-definidos, como "red", "green", "blue", "black", "white" e outros. Valores hexadecimais, que representam a cor em notação hexadecimal. Valores RGB, que representam a cor em notação RGB (Red, Green, Blue). Valores RGBA, que são semelhantes a RGB, mas incluem um valor de transparência (Alpha)*/
+							
+		}
+
+		h1{												/* configuração de h1 */
+			text-align: center;
+			color: #dddddd;								/* cor por meio do código da cor */
+		}
+
+		h2{												/* configuração de h2 */
+			text-align: right;
+			color: #12ca12;
+		}
+
+		.fig1{											/* configuração da classe fig1 */
+			position: relative;							/* O elemento com a classe "fig1" será 
+														posicionado relativo a posição original, mantendo essa posição em relação a outros elementos da página. Se outros elementos forem posicionados relativamente a classe "fig1", eles serão posicionados em relação à posição alterada, e não à posição original do elemento.
+														*/
+														/* Em HTML5 e CSS3, o termo "elemento pai" refere-se a um elemento que contém outros elementos dentro dele. Esse elemento é considerado o "pai" dos elementos contidos nele, e pode ter um ou mais elementos filhos. Em CSS3, é comum usar o conceito de elementos pai e filho para aplicar estilos a diferentes partes da página. Por exemplo, podemos definir um estilo específico para um elemento pai e, em seguida, usar seletores descendentes para definir estilos para seus elementos filhos. */
+			
+		}
+
+		.fig2{
+			position: relative;							/* idem a classe fig1 */
+			
+		}
+
+		.fig1 img{										/* configura o elemento img da classe fig1 */
+			border: 8px solid red;						/* determina uma borda de 8px tipo solida na cor 
+														vermelha */
+			
+			box-shadow: 1px 1px 4px white;				/* é utilizada para adicionar sombras em torno 
+														de um elemento HTML. (deslocamento horizontal, deslocamento vertical, espalahamento, cor)*/
+			
+			width: 25%;									/* define a largura de um elemento na página. 
+														Quando utilizamos uma unidade de medida em porcentagem (%), estamos definindo a largura do elemento em relação à largura do elemento pai (ou do elemento que contém o elemento em questão).*/
+			
+			height: 25%;								/* define a altura, idem ao anterior */
+
+			display: block;								/* é uma propriedade que define como um elemento
+														HTML deve ser exibido na página web. O valor dessa propriedade pode ser: 
+														-> block: Faz com que o elemento seja exibido como um bloco, ocupando toda a largura disponível. Normalmente, elementos de bloco iniciam uma nova linha no layout da página. Exemplos de elementos de bloco incluem parágrafos, títulos e divs. 
+														-> inline: Faz com que o elemento seja exibido como uma linha, ocupando somente o espaço necessário para exibir seu conteúdo. Elementos inline normalmente não iniciam uma nova linha no layout da página. Exemplos de elementos inline incluem links, imagens e spans. 
+														-> inline-block: Faz com que o elemento seja exibido como uma linha, mas permite definir largura e altura, assim como elementos de bloco. Esse valor é útil para elementos que precisam ser posicionados lado a lado, mas ainda precisam ter dimensões definidas. Exemplos de elementos inline-block incluem botões e campos de formulário. 
+														-> none: Faz com que o elemento não seja exibido na página. Isso pode ser usado para esconder elementos em certas situações, ou para esconder elementos de forma dinâmica com JavaScript.
+														-> flex: Faz com que o elemento seja exibido como um elemento flexível, permitindo a criação de layouts responsivos e dinâmicos. Esse valor é útil para criar layouts em que o tamanho e posição dos elementos precisam ser ajustados automaticamente de acordo com o tamanho da tela ou o conteúdo do elemento. Esses são apenas alguns dos valores possíveis para a propriedade display. A escolha do valor adequado dependerá do tipo de elemento que está sendo estilizado e do layout desejado para a página.*/
+			
+			margin: 0 auto;								/* é uma declaração de estilo que pode ser 
+														aplicada a um elemento HTML para centralizá-lo horizontalmente na página. A propriedade margin define a margem de um elemento, que é o espaço entre o elemento e outros elementos ao seu redor. Nesse caso, a margem superior e inferior é definida como 0, enquanto a margem esquerda e direita são definidas como auto. Ao definir a margem esquerda e direita como auto, o navegador irá automaticamente calcular um valor igual para ambas as margens, fazendo com que o elemento fique centralizado horizontalmente em relação ao elemento pai. Essa declaração de estilo é útil para centralizar um elemento que possui uma largura definida. No entanto, se o elemento não tiver uma largura definida, ele ocupará todo o espaço disponível e a centralização horizontal não terá efeito. Para centralizar verticalmente um elemento, outras técnicas devem ser usadas. */
+		}
+
+		.fig2 img{										/* idem a .fig1 img */
+			border: 4px dashed white;
+			box-shadow: 2px 2px 2px red;
+			width: 100%;
+			height: 100%;
+		}
+
+		.fig1 figcaption{								/* configura o elemento figcaption da classe 
+														fig1 */							
+			opacity: 0;									/* é utilizada para definir a opacidade de um 
+														elemento na página, ou seja, o quão transparente ou visível ele é. O valor da propriedade "opacity" pode variar de 0 a 1, sendo 0 totalmente transparente (invisível) e 1 totalmente opaco (visível). Valores intermediários de "opacity" (como 0.5) tornam o elemento parcialmente transparente. A propriedade "opacity" afeta não apenas o conteúdo do elemento, mas também sua cor de fundo e bordas, tornando-as igualmente transparentes. */
+			
+			position: absolute;							/* é utilizada para definir como um elemento 
+														deve ser posicionado na página em relação aos outros elementos. Quando utilizamos a propriedade "position: absolute", estamos definindo que o elemento deve ser posicionado em relação ao elemento pai mais próximo que tenha uma posição definida (ou seja, um elemento com "position: relative", "position: absolute" ou "position: fixed").Isso significa que, se utilizarmos valores de posicionamento como "top", "right", "bottom" ou "left", o elemento será posicionado a partir da posição do elemento pai que tenha uma posição definida. */
+			
+			top: 0px;									/* é usado para definir a posição vertical de um 
+														elemento em relação à borda superior do seu elemento pai mais próximo que tenha uma posição definida. A propriedade "top" é comumente usada em conjunto com outras propriedades de posicionamento, como "left", "right" e "bottom", para posicionar elementos em diferentes áreas da página*/
+			
+			background-color: rgba(255, 0, 0, 0.4);		/* é usado para definir a cor de fundo de um 
+														elemento. Essa cor é aplicada à área que fica atrás do conteúdo do elemento. RGBA" significa "Red Green Blue Alpha" em CSS. É um sistema de cores que permite definir a cor de um elemento usando os valores de vermelho (R), verde (G) e azul (B), além de um valor de transparência (A). O valor da transparência (A) é definido como um número entre 0 e 1, onde 0 significa completamente transparente e 1 significa completamente opaco. Isso permite que você defina a opacidade de um elemento, tornando-o parcialmente transparente e permitindo que os elementos atrás dele sejam vistos.
+														red: um valor entre 0 e 255 que representa a quantidade de vermelho na cor. green: um valor entre 0 e 255 que representa a quantidade de verde na cor. blue: um valor entre 0 e 255 que representa a quantidade de azul na cor. alpha: um valor entre 0 e 1 que representa a transparência da cor. */
+			
+			color: green;								/* cor da letra */
+			width: 27%;
+			height: 100%;
+			
+			padding: 10px;								/* é uma propriedade que define a quantidade de 
+														espaço entre o conteúdo de um elemento e sua borda. É uma área transparente que fica entre o conteúdo do elemento e a borda, ajudando a separar o conteúdo de outros elementos próximos ou de sua borda. padding: valor; Ou então, é possível definir valores diferentes para cada um dos quatro lados do elemento: padding-top: valor;
+														padding-right: valor; padding-bottom: valor; padding-left: valor; Onde "valor" pode ser um valor absoluto (em pixels, por exemplo) ou relativo (porcentagem ou unidades "em", "rem" ou "vw").*/
+			
+			box-sizing: border-box;						/* é uma propriedade que define como o tamanho 
+														total de um elemento é calculado, levando em consideração o conteúdo, padding e borda. A propriedade "box-sizing" pode ser usada para alterar a maneira como o navegador calcula o tamanho de um elemento, o que pode afetar o layout da página. Existem dois valores possíveis para a propriedade "box-sizing": "content-box": o tamanho total do elemento é calculado levando em consideração apenas o conteúdo, ignorando a largura da borda e o preenchimento (padding). Este é o valor padrão do box-sizing. "border-box": o tamanho total do elemento é calculado levando em consideração o conteúdo, padding e largura da borda. Nesse caso, a largura do elemento será a soma do conteúdo, padding e borda, em vez de apenas o conteúdo. */
+			
+			transition: opacity 1s;						/* é uma propriedade que permite animar uma
+														mudança de estado de um elemento, suavizando a transição entre um estado e outro. Com o "transition", é possível controlar o tempo, o tipo e outras características da animação de transição. transition: propriedade duração tipo delay; Onde: "propriedade" é a propriedade CSS que será animada. "duração" é o tempo que a transição levará para ser concluída (em segundos ou milissegundos). "tipo" é o tipo de transição que será usada, como linear, ease, ease-in, ease-out, ease-in-out, entre outros. "delay" é o tempo que deve passar antes de começar a transição (em segundos ou milissegundos). */
+
+		}
+
+		.fig2 figcaption{								/* idem a classe .fig1 figcaption */
+			opacity: 0;
+			position: absolute;
+			top: 0px;
+			background-color: rgba(0, 0, 0, 0.8);
+			color: green;
+			width: 100%;
+			height: 100%;
+			padding: 10px;
+			box-sizing: border-box;
+			transition: opacity 2s;
+
+		}
+
+		.fig1:hover figcaption{							/* é um pseudo-seletor que permite estilizar um 
+														elemento quando o mouse passa por cima dele. Quando o mouse está sobre o elemento, as propriedades CSS especificadas no seletor "hover" entram em vigor, e quando o mouse é retirado, as propriedades voltam ao estado original.
+														
+														seletor:hover {
+  																propriedades CSS;
+														}
+														Onde: "seletor" é o elemento HTML que deve ser estilizado quando o mouse passar por cima dele. "propriedades CSS" são as propriedades que serão aplicadas ao elemento quando o mouse passar por cima dele. */
+			opacity: 1;
+
+		}
+
+		.fig2:hover figcaption{							/* idem ao hover da classe .fig1
+			opacity: 1;
+
+		}
+	</style>
+</head>
+<body background="imagens/fundo.webp">					<!-- o parâmetro background define a imagem de 	
+														fundo a ser mostrada no site -->
+
+	<h1>Título Principal</h1>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<figure class="fig1">								<!-- A tag <Figure> é utilizada para marcar um 
+														conteúdo independente, como uma imagem, um diagrama, um vídeo, uma tabela, entre outros. O objetivo dessa tag é fornecer uma maneira semântica de relacionar um conteúdo independente com seu respectivo conteúdo explicativo, como uma legenda ou descrição.O uso da tag <figure> em conjunto com a tag <figcaption> ajuda a tornar o conteúdo da página mais acessível e compreensível para os usuários, permitindo que as informações de descrição e legenda sejam interpretadas de maneira correta e organizada pelos mecanismos de busca e leitores de tela.-->
+														<!--a classe (class) é um atributo utilizado para adicionar estilos e identificar elementos de forma semântica. Através da classe, é possível definir estilos CSS específicos para um ou mais elementos, separando-os dos demais elementos com estilos diferentes. É possível utilizar uma mesma classe em vários elementos diferentes, permitindo a aplicação de um estilo comum a todos eles. Além disso, o nome das classes deve ser escolhido de forma descritiva e semântica, facilitando a compreensão do código por outros desenvolvedores.-->
+	
+	<img src="imagens/lua1.jpg" width="200" height="100"> <!-- carrega uma imagem e determina o seu 
+															tamanho -->
+		
+		<figcaption>Lua no mar</figcaption>				<!-- a tag <figcaption> é utilizada para 
+														adicionar uma legenda ou descrição a um elemento independente marcado pela tag <figure>. O objetivo dessa tag é fornecer uma maneira semântica de relacionar um conteúdo independente com seu respectivo conteúdo explicativo.-->
+	</figure>
+
+	<h2>Título 2</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<figure class="fig1">
+		<img src="imagens/lua2.jpg" width="200" height="100">
+		<figcaption>Lua cheia</figcaption>
+	</figure>
+
+	<h2>Título 2</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<figure class="fig2">
+		<img src="imagens/lua3.jpg" width="200" height="100">
+		<figcaption>Lua nas nuvens</figcaption>
+	</figure>
+
+	<h2>Título 2</h2>
+
+	<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+	tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+	quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+	consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+	cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+	proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+
+	<figure class="fig2">
+		<img src="imagens/lua4.jpg" width="200" height="100">
+		<figcaption>Lua no cerrado</figcaption>
+	</figure>
+
+	<p>Desenvolvido por N@ndo &copy;</p> 					<!--  o caractere &copy; é uma entidade HTML 
+															que representa o símbolo de direitos autorais. Ele é utilizado para exibir o símbolo de copyright em páginas da web. O &copy; é um exemplo de entidade HTML, que é uma sequência de caracteres que representa um caractere especial, que não pode ser representado diretamente em HTML. As entidades HTML são compostas por um caractere de escape "&", seguido por um nome ou número que representa o caractere desejado, e um ponto e vírgula no final. -->
+
+
+
+</body>
+</html>
